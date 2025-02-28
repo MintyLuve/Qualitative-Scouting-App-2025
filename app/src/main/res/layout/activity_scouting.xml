@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityScouting"
+    android:id="@+id/scouting_full_page"
+    android:background="@color/light_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="12"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/bottom_bar_background"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/home_button"
+                android:clickable="true"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:src="@drawable/menu_bars"
+                android:scaleType="fitCenter"
+                android:layout_gravity="start"
+                android:layout_alignParentStart="true"
+                android:background="@color/transparent"/>
+
+            <ImageButton
+                android:id="@+id/help_button"
+                android:clickable="true"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:src="@drawable/help_button"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitCenter"
+                android:layout_gravity="right"
+                android:background="@color/transparent"
+                android:layout_weight="1"/>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="11">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <com.fro.qualitativescoutingapp2025.RowLargeBox
+                    android:id="@+id/row_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:text="General Match Notes"
+                    app:box_type="type_box"/>
+
+                <com.fro.qualitativescoutingapp2025.RowLargeBox
+                    android:id="@+id/row_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:text="Strengths"
+                    app:box_type="type_box"/>
+
+                <com.fro.qualitativescoutingapp2025.RowLargeBox
+                    android:id="@+id/row_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:text="Weaknesses/ Failures"
+                    app:box_type="type_box"/>
+
+                <com.fro.qualitativescoutingapp2025.RowLargeBox
+                    android:id="@+id/row_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:text="Questionable Strategy/ Team Issue "
+                    app:box_type="type_box"/>
+                <TextView
+                    android:id="@+id/submit_button"
+                    android:clickable="true"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:padding="10dp"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:textColor="@color/white"
+                    android:text="Submit"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:autoSizeTextType="uniform"
+                    android:backgroundTint="@color/fro_blue"
+                    android:background="@drawable/box_background"
+                    android:foreground="@drawable/box_outline"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="150dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/confirm_popup"
+        android:visibility="gone"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/box_background"
+        android:layout_marginBottom="100dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:text="Submit Data?"
+            android:autoSizeTextType="uniform"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@color/text_grey"
+            android:fontFamily="@font/helvetica_bold"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:layout_marginTop="10dp"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="5dp">
+            <TextView
+                android:id="@+id/confirm_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All data has been successfully inputted!"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/text_grey"/>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".4"
+            android:padding="20dp"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/confirm_yes"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/helvetica_bold"
+                android:textColor="@color/white"
+                android:text="Yes"
+                android:gravity="center"
+                android:autoSizeTextType="uniform"
+                android:backgroundTint="@color/green"
+                android:background="@drawable/box_background"
+                android:foreground="@drawable/box_outline"/>
+            <TextView
+                android:id="@+id/confirm_no"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/helvetica_bold"
+                android:textColor="@color/white"
+                android:text="No"
+                android:gravity="center"
+                android:autoSizeTextType="uniform"
+                android:backgroundTint="@color/red"
+                android:background="@drawable/box_background"
+                android:foreground="@drawable/box_outline"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.fro.qualitativescoutingapp2025.HelpPopup
+        android:id="@+id/scouting_help_popup"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

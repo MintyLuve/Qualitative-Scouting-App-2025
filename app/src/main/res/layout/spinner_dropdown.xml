@@ -1,0 +1,8 @@
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:maxLines="1"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/dropdown_background"
+    android:ellipsize="marquee"
+    android:gravity="center_vertical"
+    />

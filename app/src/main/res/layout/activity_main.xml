@@ -1,0 +1,111 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/main_full_page">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/main"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/night_blue"
+        tools:context=".ActivityMain"
+        android:weightSum="5">
+
+        <com.fro.qualitativescoutingapp2025.RowTopText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:text="Qualitative Scouting"
+            app:color_mode="light"
+            android:layout_weight="0.6">
+        </com.fro.qualitativescoutingapp2025.RowTopText>
+
+        <com.fro.qualitativescoutingapp2025.RowTopImage
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:image="@drawable/reefscape_logo"
+            app:color_mode="light"
+            android:layout_weight="0.4">
+        </com.fro.qualitativescoutingapp2025.RowTopImage>
+
+        <com.fro.qualitativescoutingapp2025.RowTwoBoxes
+            android:id="@+id/main_row_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:left_text="Scouter\'s Name"
+            app:right_text="Match Number"
+            app:left_box_type="type_box"
+            app:right_box_type="type_box"/>
+
+        <com.fro.qualitativescoutingapp2025.RowThreeBoxes
+            android:id="@+id/main_row_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:left_text="Red Alliance\nTeam 1"
+            app:middle_text="Red Alliance\nTeam 2"
+            app:right_text="Red Alliance\nTeam 3"
+            app:left_box_type="team_number_dropdown"
+            app:middle_box_type="team_number_dropdown"
+            app:right_box_type="team_number_dropdown"/>
+
+        <com.fro.qualitativescoutingapp2025.RowThreeBoxes
+            android:id="@+id/main_row_3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:left_text="Blue Alliance\nTeam 1"
+            app:middle_text="Blue Alliance\nTeam 2"
+            app:right_text="Blue Alliance\nTeam 3"
+            app:left_box_type="team_number_dropdown"
+            app:middle_box_type="team_number_dropdown"
+            app:right_box_type="team_number_dropdown"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.8"
+            android:layout_margin="30dp">
+            <TextView
+                android:id="@+id/startButton"
+                android:padding="40dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:autoSizeTextType="uniform"
+                android:textAlignment="center"
+                android:text="Start Scouting"
+                android:fontFamily="@font/helvetica_bold"
+                android:clickable="true"
+                android:layout_weight="8"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/box_background">
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/main_help_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:layout_weight="2"
+                android:scaleType="fitCenter"
+                android:background="@color/transparent"
+                android:src="@drawable/help_button">
+            </ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.fro.qualitativescoutingapp2025.HelpPopup
+        android:id="@+id/main_help_popup"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

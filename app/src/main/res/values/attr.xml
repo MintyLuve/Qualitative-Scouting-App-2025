@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TemplateBoxes">
+        <attr name="left_text" format="string" />
+        <attr name="middle_text" format="string" />
+        <attr name="right_text" format="string" />
+        <attr name="text" format="string"/>
+        <attr name="text_1" format="string"/>
+        <attr name="text_2" format="string"/>
+        <attr name="text_3" format="string"/>
+        <attr name="text_4" format="string"/>
+        <attr name="text_5" format="string"/>
+        <attr name="image" format="reference"/>
+
+        <attr name="left_box_type" format="enum" >
+            <enum name="type_box" value="0"/>
+            <enum name="text_dropdown" value="1"/>
+            <enum name="team_number_dropdown" value="2"/>
+            <enum name="toggle" value="3"/>
+            <enum name="counter" value="4"/>
+            <enum name="stopwatch" value="5"/>
+            <enum name="nothing" value="6"/>
+        </attr>
+
+        <attr name="middle_box_type" format="enum" >
+            <enum name="type_box" value="0"/>
+            <enum name="text_dropdown" value="1"/>
+            <enum name="team_number_dropdown" value="2"/>
+            <enum name="toggle" value="3"/>
+            <enum name="counter" value="4"/>
+            <enum name="stopwatch" value="5"/>
+            <enum name="nothing" value="6"/>
+        </attr>
+
+        <attr name="right_box_type" format="enum" >
+            <enum name="type_box" value="0"/>
+            <enum name="text_dropdown" value="1"/>
+            <enum name="team_number_dropdown" value="2"/>
+            <enum name="toggle" value="3"/>
+            <enum name="counter" value="4"/>
+            <enum name="stopwatch" value="5"/>
+            <enum name="nothing" value="6"/>
+        </attr>
+
+        <attr name="box_type" format="enum" >
+            <enum name="type_box" value="0"/>
+            <enum name="text_dropdown" value="1"/>
+            <enum name="team_number_dropdown" value="2"/>
+            <enum name="toggle" value="3"/>
+            <enum name="counter" value="4"/>
+            <enum name="stopwatch" value="5"/>
+            <enum name="nothing" value="6"/>
+        </attr>
+
+        <attr name="box_type_1" format="enum" >
+            <enum name="type_box" value="0"/>
+            <enum name="text_dropdown" value="1"/>
+            <enum name="team_number_dropdown" value="2"/>
+            <enum name="toggle" value="3"/>
+            <enum name="counter" value="4"/>
+            <enum name="stopwatch" value="5"/>
+            <enum name="nothing" value="6"/>
+        </attr>
+
+        <attr name="box_type_2" format="enum" >
+            <enum name="type_box" value="0"/>
+            <enum name="text_dropdown" value="1"/>
+            <enum name="team_number_dropdown" value="2"/>
+            <enum name="toggle" value="3"/>
+            <enum name="counter" value="4"/>
+            <enum name="stopwatch" value="5"/>
+            <enum name="nothing" value="6"/>
+        </attr>
+
+        <attr name="box_type_3" format="enum" >
+            <enum name="type_box" value="0"/>
+            <enum name="text_dropdown" value="1"/>
+            <enum name="team_number_dropdown" value="2"/>
+            <enum name="toggle" value="3"/>
+            <enum name="counter" value="4"/>
+            <enum name="stopwatch" value="5"/>
+            <enum name="nothing" value="6"/>
+        </attr>
+
+        <attr name="box_type_4" format="enum" >
+            <enum name="type_box" value="0"/>
+            <enum name="text_dropdown" value="1"/>
+            <enum name="team_number_dropdown" value="2"/>
+            <enum name="toggle" value="3"/>
+            <enum name="counter" value="4"/>
+            <enum name="stopwatch" value="5"/>
+            <enum name="nothing" value="6"/>
+        </attr>
+
+        <attr name="box_type_5" format="enum" >
+            <enum name="type_box" value="0"/>
+            <enum name="text_dropdown" value="1"/>
+            <enum name="team_number_dropdown" value="2"/>
+            <enum name="toggle" value="3"/>
+            <enum name="counter" value="4"/>
+            <enum name="stopwatch" value="5"/>
+            <enum name="nothing" value="6"/>
+        </attr>
+
+        <attr name="color_pattern" format="enum" >
+            <enum name="white_grey_white" value="0"/>
+            <enum name="grey_white_grey" value="1"/>
+        </attr>
+
+        <attr name="color_mode" format="enum" >
+            <enum name="light" value="0"/>
+            <enum name="dark" value="1"/>
+        </attr>
+<!--huh-->
+    </declare-styleable>
+
+</resources>

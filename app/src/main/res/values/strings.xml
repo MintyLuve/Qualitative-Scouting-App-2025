@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Qualitative Scouting App 2025</string>
+
+    <string name="help_screen_header_1_page_1">What is Qualitative Scouting</string>
+    <string name="help_screen_text_1_page_1">
+\t You watch the game and write down any interesting/ important events that happens. You are not focusing on points or score, but on data that won\'t be recorded from game or pit scouting. \n</string>
+
+    <string name="help_screen_header_1_page_2">Helpful Tidbits</string>
+    <string name="help_screen_text_1_page_2">
+\t \u2022 Coral Station Left/Right is determined by the driver\'s POV. \n
+\t \u2022 You can find the human player position by looking at the players\' shirt colors, and inferring their team. \n
+\t \u2022 Examples of things to put in the notes box: If the robot is a skateboard, a defense bot, or their auto fails. \n </string>
+
+    <string name="help_screen_header_2_page_2">Terminology</string>
+    <string name="help_screen_text_2_page_2">
+\t \u2022 REEF =  The hexagonal structure with branches where coral can be scored. \n
+\t \u2022 BARGE = The structure spanning the center of the field where alliances can score algae and robots can climb. \n
+\t \u2022 PARKED = All parts of the robot are inside their alliance\'s BARGE ZONE. \n
+\t \u2022 SHALLOW CAGE = All parts of the robot are above ground, hanging on the higher cage. \n
+\t \u2022 DEEP CAGE = All parts of the robot are above ground, hanging on the lower cage. \n
+\t \u2022 COOPERITION BONUS = If both alliance\'s human players score in the BARGE twice. \n
+\t \u2022 AUTO RANKING POINT = Robot leaves the BARGE ZONE and scores at least one point. \n
+\t \u2022 CORAL RANKING POINT = At least 5 coral on each REEF layer (If COOPERITION is scored, only 3 of the 4 layers need 5 coral). \n
+\t \u2022 BARGE RANKING POINT = At least 14 points scored in endgame. \n</string>
+
+    <string name="help_screen_header_1_page_3">Penalties</string>
+    <string name="help_screen_text_1_page_3">
+\t \u2022 If there is a penalty, the ref closest to the offender will wave a flag that corresponds to their team\'s color. \n
+\t \u2022 A ROBOT may not launch CORAL unless their BUMPERS are partially in their REEF ZONE. \n
+\t \u2022 No more than 1 ROBOT may be on the opponent’s side of the FIELD. \n
+\t \u2022 A ROBOT may not contact an opponent CAGE during the last 20 seconds, regardless of who initiates contact. \n
+\t \u2022 A ROBOT may not simultaneously CONTROL more than 1 CORAL and 1 ALGAE either directly or transitively through other objects.</string>
+
+
+    <string name="help_screen_header_2_page_3">Visual Cues</string>
+    <string name="help_screen_text_2_page_3">
+\t \u2022 Once a team receives a YELLOW or RED CARD, a yellow rectangle will show next to the team number on the audience display. \n
+\t \u2022 The BARGE has three segments of lights on each side of the truss which indicate progression toward and completion of the Coopertition Bonus and the final 20 seconds in the match. Once each alliance has scored two ALGAE all six segments will illuminate. The lights will flash to indicate that there are 20 seconds left in the match. \n
+\t \u2022 If COOPERTITION is enabled, a handshake icon will be on the scoreboard.\n</string>
+
+</resources>
