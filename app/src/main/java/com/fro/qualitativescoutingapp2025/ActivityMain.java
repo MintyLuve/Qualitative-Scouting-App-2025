@@ -36,6 +36,9 @@ public class ActivityMain extends AppCompatActivity {
         WindowInsetsControllerCompat windowInsetsController = WindowCompat.getInsetsController(getWindow(), getWindow().getDecorView());
         windowInsetsController.hide(WindowInsetsCompat.Type.systemBars());
 
+        // Creates an exception handler (when app crashes, a stacktrace is written)
+        Thread.setDefaultUncaughtExceptionHandler(new ExceptionHandler());
+
         // Instantiate variables here \/
         startButton = findViewById(R.id.startButton);
         helpButton = findViewById(R.id.main_help_button);

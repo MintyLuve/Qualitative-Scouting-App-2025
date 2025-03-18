@@ -28,8 +28,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="baseline_keyboard_arrow_down_24" />
-                            <entry key="sourceFile" value="C:\Users\Sophia\Documents\Programming\App-Dev\Scouting-App-2025" />
+                            <entry key="assetSourceType" value="FILE" />
+                            <entry key="outputName" value="home_button" />
+                            <entry key="sourceFile" value="C:\Users\Sophia\Documents\Programming\App-Dev\Qualitative-Scouting-App\app\src\main\res\drawable\Group 6.svg" />
                           </map>
                         </option>
                       </PersistentState>
